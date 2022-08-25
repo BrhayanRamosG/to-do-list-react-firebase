@@ -18,7 +18,8 @@ export const useForm = <T extends Object>(initState: T) => {
   };
 
   const validateForm = () => {
-    for (const key in form) if (String(form[key]) === "") return false;
+    let key: keyof typeof form;
+    for (key in form) if (String(form[key]) === "") return false;
     return true;
   };
 
