@@ -6,4 +6,5 @@ export interface GeneralProps {
   children?: ReactNode;
   onChange?: ChangeEventHandler;
   onClick?: (e: SyntheticEvent) => void;
+  disabled?: boolean;
 }

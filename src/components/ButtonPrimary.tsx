@@ -5,12 +5,14 @@ export const ButtonPrimary = ({
   onClick,
   className,
   type = "button",
+  disabled,
 }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={`p-2 bg-green-600 dark:text-white dark:bg-green-500 rounded-md ${className}`}
+      className={`p-2 bg-lime-600 justify-center border border-transparent shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-500 dark:text-white dark:bg-lime-700 rounded-md ${className}`}
       type={type}
+      disabled={disabled}
     >
       {message}
     </button>

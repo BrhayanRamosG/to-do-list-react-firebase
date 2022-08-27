@@ -5,7 +5,7 @@ export const NavBar = () => {
   return (
     <nav>
       {NAVIGATION.map(({ id, name, route }) => (
-        <LinkNav key={id} href={name} message={route} />
+        <LinkNav key={id} href={route} message={name} />
       ))}
     </nav>
   );

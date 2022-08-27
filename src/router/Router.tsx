@@ -7,7 +7,6 @@ export const Router = () => {
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Tasks />} />
-        {/* <Route path="contacto" element={<Contact />} /> */}
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
